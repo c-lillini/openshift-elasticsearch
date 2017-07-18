@@ -49,7 +49,7 @@ function start() {
 
   echo "Starting ElasticSearch"
   export PUBLISH_HOST=$(python -c "import socket; print socket.gethostbyname('`hostname`')")
-  export ES_HEAP_SIZE="`_es_heap_size`"
+  export ES_JAVA_OPTS="-Xms`_es_heap_size` -Xmx`_es_heap_size`"
   export ES_INCLUDE="$OPENSHIFT_REPO_DIR/config/elasticsearch.in.sh"
 
   # add -d before -p to run in background
