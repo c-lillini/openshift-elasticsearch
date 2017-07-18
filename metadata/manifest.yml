@@ -1,24 +1,23 @@
 Name: elasticsearch
 Cartridge-Short-Name: ELASTICSEARCH
 Display-Name: Elasticsearch
-Description: "Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine."
+Description: Elasticsearch is a flexible and powerful open source, distributed, real-time
+  search and analytics engine. Architected from the ground up for use in distributed
+  environments where reliability and scalability are must haves, Elasticsearch gives
+  you the ability to move easily beyond simple full-text search.
 Version: 5.5.0
 License: MIT
 Vendor: elasticsearch.org
 Cartridge-Version: 1.0.0
 Cartridge-Vendor: clillini
-Source-Url: https://github.com/ajagnanan/openshift-elasticsearch/archive/master.zip
-
 Categories:
-  - web_framework
-  - service
-
+- web_framework
+- service
 Provides:
-  - elasticsearch
-  - elasticsearch-5
-  - elasticsearch-5.5
-  - elasticsearch-5.5.0
-
+- elasticsearch
+- elasticsearch-5
+- elasticsearch-5.5
+- elasticsearch-5.5.0
 Publishes:
   publish-unicast-host:
     Type: NET_TCP:elasticsearch-cluster-info
@@ -26,29 +25,28 @@ Publishes:
     Type: NET_TCP:httpd-proxy-info
   publish-gear-endpoint:
     Type: NET_TCP:gear-endpoint-info
-
 Subscribes:
   set-unicast-hosts:
     Type: NET_TCP:elasticsearch-cluster-info
-
 Scaling:
   Min: 1
   Max: -1
-
 Endpoints:
-  - Private-IP-Name: IP
-    Private-Port-Name: PORT
-    Private-Port: 8080
-    Public-Port-Name: PROXY_PORT
-    Mappings:
-    - Frontend: ""
-      Backend: ""
-      Options: { websocket: true }
-    - Frontend: "/health"
-      Backend: ""
-      Options: { health: true }
-
-  - Private-IP-Name:   IP
-    Private-Port-Name: TRANSPORT_PORT
-    Private-Port:      9300
-    Public-Port-Name:  TRANSPORT_PROXY_PORT
+- Private-IP-Name: IP
+  Private-Port-Name: PORT
+  Private-Port: 8080
+  Public-Port-Name: PROXY_PORT
+  Mappings:
+  - Frontend: ''
+    Backend: ''
+    Options:
+      websocket: true
+  - Frontend: /health
+    Backend: ''
+    Options:
+      health: true
+- Private-IP-Name: IP
+  Private-Port-Name: TRANSPORT_PORT
+  Private-Port: 9300
+  Public-Port-Name: TRANSPORT_PROXY_PORT
+Source-Url: https://github.com/c-lillini/openshift-elasticsearch/archive/master.zip
