@@ -7,6 +7,7 @@ License: MIT
 Vendor: elasticsearch.org
 Cartridge-Version: 1.0.0
 Cartridge-Vendor: clillini
+Source-Url: git@github.com:c-lillini/openshift-elasticsearch.git
 
 Categories:
   - web_framework
@@ -51,5 +52,3 @@ Endpoints:
     Private-Port-Name: TRANSPORT_PORT
     Private-Port:      9300
     Public-Port-Name:  TRANSPORT_PROXY_PORT
-    
-Source-Url: git@github.com:c-lillini/openshift-elasticsearch.git
