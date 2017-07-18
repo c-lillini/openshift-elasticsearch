@@ -74,7 +74,7 @@ function start() {
       oo-erb $OPENSHIFT_REPO_DIR/kibana.yml.erb > $OPENSHIFT_REPO_DIR/kibana.yml
       # copy to right location
       cp $OPENSHIFT_REPO_DIR/kibana.yml $OPENSHIFT_ELASTICSEARCH_DIR/kibana/config/kibana.yml
-    	cp $OPENSHIFT_REPO_DIR/kibana.yml $OPENSHIFT_ELASTICSEARCH_DIR/kibana/src/config/kibana.yml
+    	# cp $OPENSHIFT_REPO_DIR/kibana.yml $OPENSHIFT_ELASTICSEARCH_DIR/kibana/src/config/kibana.yml
   fi
 
   # Make sure elasticsearch is up and running first
