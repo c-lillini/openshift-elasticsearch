@@ -1,7 +1,7 @@
 Name: elasticsearch
 Cartridge-Short-Name: ELASTICSEARCH
 Display-Name: Elasticsearch
-Description: "Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. Architected from the ground up for use in distributed environments where reliability and scalability are must haves, Elasticsearch gives you the ability to move easily beyond simple full-text search."
+Description: "Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine."
 Version: 5.5.0
 License: MIT
 Vendor: elasticsearch.org
@@ -51,3 +51,5 @@ Endpoints:
     Private-Port-Name: TRANSPORT_PORT
     Private-Port:      9300
     Public-Port-Name:  TRANSPORT_PROXY_PORT
+    
+Source-Url: git@github.com:c-lillini/openshift-elasticsearch.git
