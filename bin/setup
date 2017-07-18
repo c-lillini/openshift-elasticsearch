@@ -3,7 +3,7 @@
 if [ ${ES_VERSION} ]; then
         echo $ES_VERSION
 else
-        echo 1.5.0
+        echo 5.5.0
 fi > $OPENSHIFT_ELASTICSEARCH_DIR/env/ES_VERSION
 
 if [ ${KIBANA_VERSION} ]; then
