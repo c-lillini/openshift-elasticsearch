@@ -2,11 +2,11 @@ Name: elasticsearch
 Cartridge-Short-Name: ELASTICSEARCH
 Display-Name: Elasticsearch
 Description: "Elasticsearch is a flexible and powerful open source, distributed, real-time search and analytics engine. Architected from the ground up for use in distributed environments where reliability and scalability are must haves, Elasticsearch gives you the ability to move easily beyond simple full-text search."
-Version: 1.5.0
+Version: 5.5.0
 License: MIT
 Vendor: elasticsearch.org
-Cartridge-Version: 1.1.0
-Cartridge-Vendor: ajagnanan
+Cartridge-Version: 1.0.0
+Cartridge-Vendor: clillini
 
 Categories:
   - web_framework
@@ -14,9 +14,9 @@ Categories:
 
 Provides:
   - elasticsearch
-  - elasticsearch-1
-  - elasticsearch-1.5
-  - elasticsearch-1.5.0
+  - elasticsearch-5
+  - elasticsearch-5.5
+  - elasticsearch-5.5.0
 
 Publishes:
   publish-unicast-host:
