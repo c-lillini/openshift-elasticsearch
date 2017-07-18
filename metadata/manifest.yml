@@ -7,7 +7,7 @@ License: MIT
 Vendor: elasticsearch.org
 Cartridge-Version: 1.0.0
 Cartridge-Vendor: clillini
-Source-Url: https://github.com/c-lillini/openshift-elasticsearch/archive/master.zip
+Source-Url: https://github.com/ajagnanan/openshift-elasticsearch/archive/master.zip
 
 Categories:
   - web_framework
