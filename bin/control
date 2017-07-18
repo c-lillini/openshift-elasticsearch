@@ -55,7 +55,7 @@ function start() {
   export PATH=$JAVA_HOME/bin:$PATH
 
   # add -d before -p to run in background
-  $OPENSHIFT_ELASTICSEARCH_DIR/usr/bin/elasticsearch -d -p $ES_PID_FILE -D "es.path.conf=$ES_CONFIG_DIR"
+  $OPENSHIFT_ELASTICSEARCH_DIR/usr/bin/elasticsearch -d -p $ES_PID_FILE -E "es.path.conf=$ES_CONFIG_DIR"
 
   echo "Starting Nginx"
   if [ -f "$NGINX_EXEC" ]; then
